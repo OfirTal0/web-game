@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block signup %}
+
+<div class="boxlogin">
+    <h1>Register</h1>
+    <form action="/register" method="POST" style="align-items: center;">
+        <input type="text" name = "username" placeholder="User name" required>
+        <input type="password" name = "password" placeholder="Password">
+        <input type="text" name = "country" placeholder="Country">
+        <p>Choose a profile image:</p>
+        <div class="image-selection">
+        <label>
+            <input  type="radio" name="profileimg" value="assasin">
+            <img  src="/static/images/profileimg/assasin.png" alt="Image 1">
+        </label>
+        <label>
+            <input  type="radio" name="profileimg" value="character">
+            <img  src="/static/images/profileimg/character.png" alt="Image 2">
+        </label>
+        <label>
+            <input  type="radio" name="profileimg" value="ghost">
+            <img  src="/static/images/profileimg/ghost.png" alt="Image 3">
+        </label>
+        <label>
+            <input  type="radio" name="profileimg" value="ninja">
+            <img  src="/static/images/profileimg/ninja.png" alt="Image 4">
+        </label>
+        <label>
+            <input  type="radio" name="profileimg" value="swordsman">
+            <img  src="/static/images/profileimg/swordsman.png" alt="Image 5">
+        </label>
+        <label>
+            <input  type="radio" name="profileimg" value="wizard">
+            <img  src="/static/images/profileimg/wizard.png" alt="Image 5">
+        </label>
+        </div>
+
+        <input type="submit" value="Sign up" class="botton">
+        {{ error }}
+    </form>
+
+</div>
+
+{% endblock %}

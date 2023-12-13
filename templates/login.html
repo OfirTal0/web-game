@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block login %}
+
+<div class="boxlogin">
+    <img class="loginimg" src="/static/images/profileimg/loginimg.png">
+    <form action="/login" method="POST" >
+    <input type="text" class="input" name="username" placeholder = "Username" required>
+    <input type="password" class="input" name="password" placeholder = "Password" required>
+    <input type = "submit" class="botton" value = "Sign in">
+</form> 
+    <form action="/signup" method="POST">
+        <input type = "submit" class="botton" value = "Sign up">
+    </form>
+    <a href="/reset_my_password">Forgot my password</a>
+
+    {{ error }}
+</div> 
+
+{% endblock %}

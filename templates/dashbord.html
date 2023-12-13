@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block dashbord %}
+<div class="navbar">
+    {% if login==True %}
+    <div class="profilebar">
+    <img class="userimg" src="/static/images/profileimg/{{ profileimg }}.png" alt=""> 
+    <div class="">
+    <h3>Hello, {{ username }}</h3>
+    <p> Welcome to Game On</p>
+    </div>
+    </div> 
+    <div class="searchbar">
+    <input class="search" type="search" name="search" placeholder="Search games">
+    <img class="searchlogo" src="/static/images/icons/search.png" alt="">  
+    </div>
+    {% else %} 
+    <div class="profilebar">
+        <img class="userimg" src="/static/images/icons/security.png" alt=""> 
+        <div class="">
+        <h3>Hello, Anonymous</h3> 
+        <p>Let us know you, and please LOGIN </p>
+    </div>
+        </div> 
+        <div class="searchbar">
+        <input class="search" type="search" name="search" placeholder="Search games">
+        <img class="searchlogo" src="/static/images/icons/search.png" alt="">  
+        </div>
+    {% endif %}   
+</div>
+        <div class="section2">
+            <img class="competitionimg" src="/static/images/gameimg/sword-fight.png" alt="">
+            <div class="info">
+                <h3>The Speed Round competition!</h3>
+                <p>Click here for speed round</p>
+                <p>Include 4 games in 1 round</p>
+                <p>The final score is calculated</p>
+                <form action="">
+                    <input id="button" type="submit" value="Click here!" class="button">
+                </form>
+            </div>
+            <div class="info" >
+                <h3>3 Top players</h3>
+                <div class="players">
+                    <div class="player">
+                    <img class="playerimg" src="/static/images/profileimg/{{ userimg1 }}.png" alt=""> 
+                     <div>{{ username1 }}</div>
+                        <div>{{ userscore1 }}</div>
+                    </div>
+                    <div class="player">
+                        <img class="playerimg" src="/static/images/profileimg/{{ userimg2 }}.png" alt=""> 
+                        <div>{{ username2 }}</div>
+                        <div>{{ userscore2 }}</div>
+                    </div>
+                    <div class="player">
+                        <img class="playerimg" src="/static/images/profileimg/{{ userimg3 }}.png" alt=""> 
+                        <div>{{ username3 }}</div>
+                        <div>{{ userscore3 }}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+            <form action="" class="section3">
+                <div class="game">
+                <a href="/trivia_game_start">
+                    <img src="/static/images/gameimg/quiz.png" alt="" class="gameimg">
+                </a>
+                <h2>Trivia</h2>
+            </div>
+            <div class="game">
+                <a href="/simongame">
+                    <img src="/static/images/gameimg/simongame.png" alt="" class="gameimg">
+                </a>
+                <h2>Simon Game</h2>
+            </div>
+            <div class="game">
+                <a href="/memorygame">
+                    <img src="/static/images/gameimg/memory-game.png" alt="" class="gameimg">
+                </a>
+                <h2>Memory game</h2>
+            </div>
+            <div class="game">
+                <a href="/game">
+                    <img src="/static/images/gameimg/xo.png" alt="" class="gameimg">
+                </a>
+                <h2>XO Game</h2>
+            </div>
+            <div class="game">
+                <a href="/game">
+                    <img src="/static/images/gameimg/snake.png" alt="" class="gameimg">
+                </a>
+                <h2>Snake game</h2>
+            </div>
+            <div class="game">
+                <a href="/game">
+                    <img src="/static/images/gameimg/gamepad.png" alt="" class="gameimg">
+                </a>
+                <h2>game 6</h2>
+            </div>
+        </form>
+
+
+
+{% endblock %}

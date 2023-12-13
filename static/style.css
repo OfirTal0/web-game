@@ -1,0 +1,387 @@
+body {
+   
+    background-image: url('https://cdn.wallpapersafari.com/59/66/78ykIA.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    gap: 20px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center; 
+    gap:30px;
+    height:90vh;
+    width: 90vw;
+}
+
+.gameboard {
+    background-color: rgba(240, 248, 255, 0.521);   
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 85vh;
+    align-items: center;    
+}
+
+
+.navbarmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(240, 248, 255, 0.2);
+    border-radius: 30px;
+    height: 90vh;
+    padding: 1%;
+}
+
+
+h2 {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.mainlogo {
+    height: 25px;
+    width: 25px;
+
+}
+
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    background-color: rgba(240, 248, 255, 0.2);
+    border-radius: 30px;
+    padding: 1%;
+}
+
+.profilebar {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    
+
+}
+.userimg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 400px;
+}
+
+
+.search {
+    background-color: transparent;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 1px white;
+    border-radius: 30px;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+.searchlogo {
+    width: 30px;
+    height: 30px;
+    color: white;
+
+}
+
+.gametype {
+    background-image: url('dices.png');
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.gametype:hover {
+    width: 65px;
+    height: 65px;
+
+}
+
+.section2 {
+    display: flex;
+    gap: 50px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.playerimg {
+    width: 50px;
+    height: 50px;
+
+}
+.players {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section2-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.section3 {
+    border-radius: 30px;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.game {
+    background-color: rgba(240, 248, 255, 0.2);
+    width: 150px;
+    height: 130px;
+    border-radius: 30px;
+    display: flex; /* Add display flex to the .game class */
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center;
+    padding: 1%;
+}
+
+
+.competitionimg {
+    height: 210px;
+    width: 210px;
+}
+
+.gameimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+
+}
+
+.gameimg:hover {
+    width: 100px;
+    height: 85px;
+}
+
+
+.boxlogin {
+    border-radius: 30px;
+    box-shadow: 3px 3px gray ;
+    background-color: rgba(245, 245, 245, 0.489);
+    padding: 1%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    width: fit-content;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.botton {
+    width: 80px;
+    box-shadow: 2px 2px gray;
+    cursor: pointer;
+}
+
+
+.loginimg {
+    width: 40%;
+
+}
+
+/* CSS to style the image selection container */
+.image-selection {
+    display: flex; /* Use flexbox to create a row layout */
+    justify-content: space-between; /* Space evenly between items */
+    margin-top: 10px; /* Add spacing from the previous input elements */
+}
+
+.image-selection label {
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: column; /* Stack image and radio button vertically */
+}
+
+.image-selection img {
+    max-width: 100px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the radio buttons (optional) */
+.image-selection input[type="radio"] {
+    margin-top: 5px; /* Add spacing between image and radio button */
+}
+
+input {
+    width: fit-content;
+    
+}
+
+/* trivia */
+
+.trivia_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profilenavbar {
+    display: flex;
+    display: flex;
+    gap: 500px;
+}
+
+.profile {
+    display: flex;
+    gap:20px;
+}
+
+.points {
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+    width: 20px;
+    height: fit-content;
+    font-family: sans-serif;
+    font-size: larger;
+    align-items: center;
+}
+
+
+.triviacontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.option1 {
+    background-color:rgba(240, 128, 128, 0.525);
+    border: none;
+    border-radius: 10px;
+    padding:5%;
+    width: 150px;
+    height: 50px;
+    font-size:x-large;
+    box-shadow: 3px 3px gray ;
+
+    &:hover {
+        background-color: rgba(240, 128, 128);
+        color: black;
+        transition: all 0.5s;
+    }
+}
+
+.option2 {
+    background-color:rgba(120, 173, 162, 0.525);
+    border: none;
+    border-radius: 10px;
+    padding:5%;
+    width: 150px;
+    height: 50px;
+    font-size:x-large;
+    box-shadow: 3px 3px gray ;
+    margin-top:10px;
+
+    &:hover {
+        background-color:rgba(120, 173, 162);
+        color: black;
+        transition: all 0.5s;
+    }
+}
+
+
+.theques {
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 7%;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.question {
+    background-color:rgba(121, 127, 126, 0.525);
+    /* border: none; */
+    border-radius: 10px;
+    padding:2%;
+    width: 200px;;
+    height: 30px;
+    font-size:medium;
+    box-shadow: 3px 3px gray ;
+    align-items: center;
+
+    &:hover {
+        background-color:rgba(121, 127, 126);
+        color: black;
+        transition: all 0.5s;
+    }
+}
+
+.nextquestion {
+    border-radius: 5px;
+    background-color: rgba(21, 134, 21, 0.484);
+}
